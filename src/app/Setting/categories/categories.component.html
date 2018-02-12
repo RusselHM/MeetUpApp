@@ -1,0 +1,13 @@
+<form novalidate>
+  <fieldset>
+  <div class="form-group">
+    <label>Category</label>
+    <select class="form-control">
+      <option value="">Please select a Category</option>
+      <option *ngFor="let cat of Categories" 
+              [value]="Categories">{{cat.name}}</option>
+        
+    </select>
+  </div>
+  </fieldset>
+</form>
